@@ -88,7 +88,9 @@
     flex: 1 1 30%;
     max-width: 30%;
 }
- 
+ .forget-password-link{
+     text-align: center;
+ }
  }
  .m-link.m-link--focus {
     color: #196AAC;
@@ -123,4 +125,12 @@ color: black;
 }
 .select-padding{
     padding: 11px !important;
+}
+.justify-content-center{
+justify-content: center;
+}
+.btn-Cancel{
+    background: none;
+    border: 0;
+    color: gray;
 }
