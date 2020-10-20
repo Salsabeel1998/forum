@@ -56,22 +56,8 @@
      -ms-flex-order: 2;
      order: 1;
  } 
- #select2-m_select2_1-container{
-    width: 260.156px !important;
- }
- .select2 .select2-container .select2-container--default .select2-container--below .select2-container--focus{
-    width: 260.156px !important;
- }
- .select2 .select2-container .select2-container--default{
-    width: 260.156px !important;
- }
- .select2 .select2-container .select2-container--default{
-    width: 260.156px !important;
- }
- .m-login.m-login--1 .m-login__content {
 
-    height: 43%;
-}
+
  }
  
  @media (min-width: 1025px){
