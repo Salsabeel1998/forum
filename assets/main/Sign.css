@@ -56,7 +56,9 @@
      -ms-flex-order: 2;
      order: 1;
  } 
-
+ .m-form .form-control-label, .m-form .col-form-label, .m-form .m-form__group>label {
+    padding-top: 10px;
+}
 
  }
  
