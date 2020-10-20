@@ -130,3 +130,9 @@
 #phoneNo-error{
     display: none !important;
 }
+.terms{
+color: black;
+}
+.select-padding{
+    padding: 11px !important;
+}
