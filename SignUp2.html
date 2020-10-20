@@ -81,7 +81,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="row justify-content-between">
 										<div class="col-lg-5 form-group m-form__group">
                                             <label for="m_select2_1">Country <span class="requiredInput">*</span></label>
-                                            <select class="form-control m-select2" id="m_select2_1" name="param">
+                                            <select class="form-control m-select2" id="m_select2_1" name="country">
 												<option value="SA">Saudi Arabia</option>
 											</select>
 									
@@ -94,7 +94,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												
                                             </select>
                                             
-											<input type="" class="col-lg-8 form-control m-input m-input--square" id=""  placeholder="Enter your  phone number" name="phoneNo">
+											<input type="text" class="col-lg-8 form-control m-input m-input--square" id=""  placeholder="Enter your  phone number" name="phoneNo">
                                             </div>
 
 										</div>
@@ -105,9 +105,14 @@ License: You must have a valid license purchased only from themeforest(the above
 												<input type="text" class="form-control m-input m-input--square" id="City" placeholder="Enter your City" name="city">
 											</div>
 											<div class="col-lg-5 form-group m-form__group">
-												<label for="Company">Company <span class="requiredInput">*</span></label>
-												<input type="text" class="form-control m-input m-input--square" id="Company" placeholder="Enter your Company" name="company">
+												<label for="m_select2_8">Nationality <span class="requiredInput">*</span></label>
+												<select class="form-control m-select2 m-input m-input--square" id="m_select2_8" name="nationality">
+													<option></option>
+													<option value="SA">Saudi Arabian</option>
+												</select>
+												
 											</div>
+
 											</div>
 											<div class="row justify-content-between pt-4">
 												<div class="col-lg-5 form-group m-form__group">
@@ -115,33 +120,52 @@ License: You must have a valid license purchased only from themeforest(the above
 													<input class="form-control m-input m-input--square" id="Address" type="text" placeholder="Enter your Address" name="address">
 												</div>
 												<div class="col-lg-5 form-group m-form__group">
-                                                    <label for="m_select2_8">Nationality <span class="requiredInput">*</span></label>
-                                                    <select class="form-control m-select2 m-input m-input--square" id="m_select2_8" name="param">
-                                                        <option></option>
-                                                        <option value="SA">Saudi Arabian</option>
-                                                    </select>
-													
+													<label for="Work">Job Title <span class="requiredInput">*</span></label>
+													<input class="form-control m-input m-input--square" id="Work" type="text" placeholder="Enter your Job Title" name="work">
 												</div>
 											</div>
 											<div class="row justify-content-between pt-4">
 												<div class="col-lg-5 form-group m-form__group">
-													<label for="Work">Job Title <span class="requiredInput">*</span></label>
-													<input class="form-control m-input m-input--square" id="Work" type="text" placeholder="Enter your Job Title" name="work">
+													<label for="Company">Company <span class="requiredInput">*</span></label>
+													<input type="text" class="form-control m-input m-input--square" id="Company" placeholder="Enter your Company" name="company">
 												</div>
 												<div class="col-lg-5 form-group m-form__group">
-                                                    <label for="Qualification">Qualification <span class="requiredInput">*</span></label>
-                                                    <input class="form-control m-input m-input--square" id="Qualification" type="text" placeholder="Enter your Qualification" name="qualification">
+													<label for="m_select2_qualification">Qualification <span class="requiredInput">*</span></label>
+
+													<select class="form-control  m-input m-input--square select-padding" name="qualification"placeholder="">
+                                                      
+                                                        <option value="di">Diploma Degree</option>
+                                                        <option value="ba">Bachelor's Degree</option>
+                                                        <option value="ma">Master's Degree</option>
+                                                        <option value="ma">PhD Degree</option>
+													</select>
 													
 												</div>
                                             </div>
                                             <div class="row justify-content-between pt-4">
 												<div class="col-lg-5 form-group m-form__group">
 													<label for="Organization">Organization Type <span class="requiredInput">*</span></label>
-													<input class="form-control m-input m-input--square" id="Organization" type="text" placeholder="Enter your Organization Type" name="organization">
+													<select class="form-control  m-input m-input--square select-padding" id="" name="organization">
+                                                      
+                                                        <option value="ps">Private sector</option>
+                                                        <option value="gs">General sector</option>
+                                                        <option value="ie">Independent employee</option>
+                                                        <option value="gi">Governmental institution</option>
+                                                        <option value="nc">Non-profit corporation</option>
+                                                        <option value="st">Student</option>
+                                                        <option value="ot">Other</option>
+                                                    </select>
+													
 												</div>
 												<div class="col-lg-5 form-group m-form__group">
-                                                    <label for="Experiences">Experiences <span class="requiredInput">*</span></label>
-                                                    <input class="form-control m-input m-input--square" id="Experiences" type="text" placeholder="Enter your Experiences" name="experiences">
+													<label for="Experiences">Experiences <span class="requiredInput">*</span></label>
+													<select class="form-control m-input m-input--square select-padding" id="" name="experiences">
+                                                       
+                                                        <option value="1">Less than one year</option>
+                                                        <option value="2">2 years to 3 years</option>
+                                                        <option value="3">More than 5 years</option>
+                                                    </select>
+                                                  
 													
 												</div>
                                             </div>
@@ -154,7 +178,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="row m-login__form-sub justify-content-between">
 											<div class="col-lg-5  m--align-left pl-0 pt-3">
 												<label class="m-checkbox">
-													<input type="checkbox"> I accept the terms of use
+													<input type="checkbox"> <a href="#" class="terms">I accept the terms of use</a>
 													<span></span>
 												</label>
 											</div>
