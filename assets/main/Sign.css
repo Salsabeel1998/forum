@@ -89,7 +89,7 @@
     max-width: 30%;
 }
  .forget-password-link{
-     text-align: center;
+     text-align: center !important;
  }
  }
  .m-link.m-link--focus {
