@@ -91,6 +91,9 @@
  .forget-password-link{
      text-align: center !important;
  }
+ .m-form .m-form__group:first-child {
+    padding-top: 15px;
+}
  }
  .m-link.m-link--focus {
     color: #196AAC;
@@ -133,4 +136,48 @@ justify-content: center;
     background: none;
     border: 0;
     color: gray;
+}
+.m-wizard.m-wizard--5 .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 1rem;
+}
+.m-wizard.m-wizard--5 .m-wizard__head .m-wizard__nav .m-wizard__steps {
+    margin-top: 2rem;
+}
+.m-wizard.m-wizard--5.m-wizard--success .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info .m-wizard__step-number .m-wizard__step-label {
+    color: rgb(42 167 222);
+}
+.m-wizard.m-wizard--5.m-wizard--success .m-wizard__head .m-wizard__steps .m-wizard__step.m-wizard__step--current {
+    border-bottom: 2px solid rgb(42 167 222);
+}
+.select2 .select2-container .select2-container--default .select2-container--below{
+    width: inherit !important;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background: linear-gradient(90deg, #3EC4E9 0%, #29A6DE 100%)!important;;
+    border-color: #29A6DE !important;
+}
+.btn-primary:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #3EC4E9 0%, #29A6DE 100%);
+    border-color: transparent !important;
+}
+.btn-primary {
+    color: #fff;
+    background: linear-gradient(90deg, #3EC4E9 0%, #29A6DE 100%);
+    border-color: transparent !important;
+}
+#accept-error{
+    color: #f4516c !important;
+}
+.d-flex{
+    display: flex;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.m-login.m-login--1 .m-login__wrapper .m-login__form .m-login__form-action .btn {
+    padding: .75rem 2rem;
 }
