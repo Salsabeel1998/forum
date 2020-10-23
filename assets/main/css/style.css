@@ -1106,6 +1106,7 @@ height: 60vh;
 .img{
   height: 150px;
   width: 150px;
+  border-radius: 100%;
 }
 .carousel-control-next {
   right: auto;

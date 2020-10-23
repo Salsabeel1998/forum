@@ -1,0 +1,21 @@
+.search-btn{
+    transform-origin: -238% -4%;
+}
+.search-btn-ico{
+    margin-left: -27px;
+}
+.search-bar input:focus + .search-btn, .search-bar input:valid + .search-btn {
+background: #1b4a95;
+border-radius: 0.375em 0 0 0.375em ;
+
+}
+.carousel .carousel-control-prev-icon {
+background-image: url(../img/left.png);
+
+}
+.carousel .carousel-control-next-icon {
+background-image: url(../img/right.png);
+}
+.carousel-control-next {
+right: 0;
+}
