@@ -39,10 +39,10 @@ License: You must have a valid license purchased only from themeforest(the above
 
         <!--RTL version:-->
       
-		<!--<link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />-->
+	<link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
 
         <!--RTL version:-->
-            <link href="assets/demo/default/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />
+           <!-- <link href="assets/demo/default/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
 
 		<!--end::Global Theme Styles -->
 		<link rel="shortcut icon" href="assets/main/img/logo.png" />
@@ -59,6 +59,19 @@ License: You must have a valid license purchased only from themeforest(the above
         <link rel="stylesheet" href="assets/main/css/mdb.min.css">
         <!-- Your custom styles (optional) -->
         <link rel="stylesheet" href="assets/main/css/style.css">
+        <style>
+            .search-btn{
+                transform-origin: -238% -4%;
+            }
+            .search-btn-ico{
+                margin-left: -27px;
+            }
+            .search-bar input:focus + .search-btn, .search-bar input:valid + .search-btn {
+    background: #1b4a95;
+    border-radius: 0.375em 0 0 0.375em ;
+
+}
+        </style>
 	</head>
 
 	<!-- end::Head -->
@@ -117,14 +130,14 @@ License: You must have a valid license purchased only from themeforest(the above
                     <form action="" class="nav-link search-bar d-flex pt-0">
                         <input type="search" name="search" pattern=".*\S.*" required>
                         <button class="search-btn" type="submit">
-                            <i class="fas fa-search"></i>
+                            <i class="fas fa-search search-btn-ico"></i>
                         </button>
                     </form>
                
               </li>
             </ul>
     
-            <!-- Right -->
+            <!-- left -->
             <ul class="navbar-nav nav-flex-icons">
 
               <li class="nav-item">
@@ -160,11 +173,11 @@ License: You must have a valid license purchased only from themeforest(the above
          <main>
              <div class="section" id="home">
                 <div class="container-fluid">
-                    <div class="row text-right justify-content-between">
-                      <div class="offset-lg-1"></div>
+                    <div class="row text-left justify-content-between">
+                       <div class="offset-lg-1"></div>
                         <div class="col-lg-4 col-md-12 col-12 pt-lg-5 mt-lg-5 mt-lg-top">
                             <h1 class="section1__title ">
-                              الملتقى الدولي للابتكار الاجتماعي
+                                International Forum for Social Innovation
                             </h1>
                            <h5 class="date pt-3">انتظرونا في 1 - 2 نوفمبر 2020 م</h5>
                            <p class="section1__text pt-2">تنظم وزارة الموارد البشرية والتنمية الاجتماعية والأمانة السعودية لمجموعة العشرين ملتقى دولي مختص بالابتكار الاجتماعي وتطبيقاته ضمن برنامج المؤتمرات الدولية المقامة على هامش عام الرئاسة السعودية لمجموعة العشرين . مصمم وفق الرؤية 2030 يعمل على الارتقاء بالعمل الاجتماعي إلى اعلى مستوياته عن طريق منتدى رئيسي و مسابقة للابتكار الاجتماعي يقدم أيضا دورات متخصصة و منصات للإرشاد الاجتماعي ومعرض للبتكارات والجهات الممكنة</p>
@@ -180,56 +193,56 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
              </div>
              <section>
-                 <div class="who__are text-right pt-lg-5 pt-md-3 pt-3" id="about">
+                 <div class="who__are text-left pt-lg-5 pt-md-3 pt-3" id="about">
                      <div class="container">
                         <div class="section-header">
                             <h6 class="Section2__title">من نحن</h6>
-                            <div class="float-right">
+                            <div class="float-left">
                                 <img src="assets/main/img/line.png" alt="" class="img-fluid">                       
                             </div>
 
                         
                           </div>
                           <div class="row about-container mt-5 justify-content-between">
-                            <div class="col-lg-5 background order-lg-1 order-1 wow fadeInUp text-right">
-                              <img src="assets/main/img/whoAreWe.png" class="img-fluid" alt="">
+                            <div class="col-lg-5 background order-lg-1 order-1 wow fadeInUp text-left">
+                              <img src="assets/main/img/whoAreWe2.png" class="img-fluid" alt="">
                             </div>
-                            <div class="col-lg-6 content order-lg-2 order-2 text-right top-item">
+                            <div class="col-lg-6 content order-lg-2 order-2 text-left top-item">
                   
                   
-                              <div class="icon-box wow fadeInUp  text-righ">
+                              <div class="icon-box wow fadeInUp ">
                                   <div class="d-flex pt-lg-0 pt-5">                               
-                                       <div class="icon text-righ"><i class="fa fa-users"></i></div>
-                                  <h4 class="title text-righ mt-3"><a class="second__title mr-2" href="">نبذة عن الملتقى</a></h4>
+                                       <div class="icon "><i class="fa fa-users"></i></div>
+                                  <h4 class="title mt-3"><a class="second__title ml-2" href="">نبذة عن الملتقى</a></h4>
                                 </div>
 
-                                <p class="description   text-right mt-3">ملتقى سنوي لتحفيز الابتكار الاجتماعي عبر عرض التجارب الدولية والمحلية الرائدة وتحفيز فرص الابتكار الاجتماعي وتنفيذ المعامل والمسرعات لتلبية الاحتياجات المجتمعية وجودة الحيــاة
+                                <p class="description   text-left mt-3">ملتقى سنوي لتحفيز الابتكار الاجتماعي عبر عرض التجارب الدولية والمحلية الرائدة وتحفيز فرص الابتكار الاجتماعي وتنفيذ المعامل والمسرعات لتلبية الاحتياجات المجتمعية وجودة الحيــاة
                                 </p>
                               </div>
                   
-                              <div class="icon-box wow fadeInUp text-righ" data-wow-delay="0.2s">
+                              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                                   <div class="d-flex">
-                                    <div class="icon text-righ"><i class="fa fa-eye"></i></div>
-                                    <h4 class="title text-righ mt-3"><a class="second__title mr-2" href="">أهدافنا</a></h4>
+                                    <div class="icon"><i class="fa fa-eye"></i></div>
+                                    <h4 class="title mt-3"><a class="second__title ml-2" href="">أهدافنا</a></h4>
                                   </div>
                                   <ol>
                                     <li>                               
-                                       <p class="description  text-right mt-3">نشر ثقافة الابتكار 
+                                       <p class="description  text-left mt-3">نشر ثقافة الابتكار 
                                       الاجتماعي على جميع المستويات المستهدفة وتمكين المبتكرين الاجتماعيين
                                       </p>
                                     </li>
                                     <li>
-                                      <p class="description  text-right mt-3">نشر ثقافة الابتكار 
+                                      <p class="description  text-left mt-3">نشر ثقافة الابتكار 
                                         الاجتماعي على جميع المستويات المستهدفة وتمكين المبتكرين الاجتماعيين
                                         </p>
                                     </li>
                                     <li>
-                                      <p class="description  text-right mt-3">نشر ثقافة الابتكار 
+                                      <p class="description  text-left mt-3">نشر ثقافة الابتكار 
                                         الاجتماعي على جميع المستويات المستهدفة وتمكين المبتكرين الاجتماعيين
                                         </p>
                                     </li>
                                     <li>
-                                      <p class="description  text-right mt-3">نشر ثقافة الابتكار 
+                                      <p class="description  text-left mt-3">نشر ثقافة الابتكار 
                                         الاجتماعي على جميع المستويات المستهدفة وتمكين المبتكرين الاجتماعيين
                                         </p>
                                     </li>
@@ -237,13 +250,13 @@ License: You must have a valid license purchased only from themeforest(the above
 
                               </div>
                   
-                              <div class="icon-box wow fadeInUp text-righ" data-wow-delay="0.4s">
+                              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
                                   <div class="d-flex">
-                                                    <div class="icon text-righ"><i class="fa fa-edit"></i></div>
-                                <h4 class="title text-righ mt-3"><a class="second__title mr-2" href="">رسالتنا</a></h4>                  
+                                                    <div class="icon"><i class="fa fa-edit"></i></div>
+                                <h4 class="title  mt-3"><a class="second__title ml-2" href="">رسالتنا</a></h4>                  
                                   </div>
 
-                                <p class="description   text-right mt-3">نسعى إلى بناء ملتقى لدعم ممارسات مجال الابتكار الاجتماعي عن طريق أدوات متطورة وشراكات فاعلة وتمكين حقيقي لصناعة السوق ومعالجة القضايا المجتمعية بصورة مستدامة
+                                <p class="description   text-left mt-3">نسعى إلى بناء ملتقى لدعم ممارسات مجال الابتكار الاجتماعي عن طريق أدوات متطورة وشراكات فاعلة وتمكين حقيقي لصناعة السوق ومعالجة القضايا المجتمعية بصورة مستدامة
                                 </p>
                               </div>
                   
@@ -269,7 +282,7 @@ License: You must have a valid license purchased only from themeforest(the above
                           <div class="row pt-3">
 
                             <div class="col-lg-4 col-md-6 col-12  wow bounceInUp" data-wow-duration="0.2s">
-                              <div class="box text-right">
+                              <div class="box text-left">
                                 <div class="icon"><img src="assets/main/img/book.png" alt="" class="img-fluid"></div>
                                 <h4 class="title pt-2"><a href="Ershad.html">المنتدى الرئيسي</a></h4>
                                 <p class="description">منتدى مختص بإثراء مجال الابتكار الاجتماعي يستضيف ٣٦ متحدث عالمي
@@ -277,7 +290,7 @@ License: You must have a valid license purchased only from themeforest(the above
                               </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-12 wow bounceInUp" data-wow-duration="1.4s">
-                              <div class="box text-right">
+                              <div class="box text-left">
                                 <div class="icon"><img src="assets/main/img/ask.png" alt="" class="img-fluid"></div>
                                 <h4 class="title pt-2"><a href="Montada.html"> اسأل خبير</a></h4>
                                 <p class="description">احصل على فرصة الارشاد ضمن 21 جلسة ارشادية يقدمها مختصين في مجال الابتكار الاجتماعي
@@ -286,7 +299,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
                   
                             <div class="col-lg-4 col-md-6 col-12  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                              <div class="box text-right pb-1">
+                              <div class="box text-left pb-1">
                                 <div class="icon"><img src="assets/main/img/reading.png" alt="" class="img-fluid"></div>
                                 <h4 class="title pt-2"><a href="">تعلم أكثر </a></h4>
                                 <p class="description">المكان الأمثل لتعلم أسرار النجاح في الابتكار الاجتماعي وكل ما هو جديد في هذا الجانب، حيث ستجدون المواد المعرفية والتدريبية المتخصصة والمدربون المحترفون.
@@ -322,43 +335,45 @@ License: You must have a valid license purchased only from themeforest(the above
 
         
      
-         
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp mt-3 clients">
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo g20">
-              <a href="https://www.baj.com.sa/en-us/" target="_blank">
-              <img src="assets/main/img/g20.png" class="img-fluid" alt=""></a>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <a href="https://socialinnovationexchange.org/" target="_blank">
-                <img src="assets/main/img/شعار وزارة الموارد البشرية والتنمية الاجتماعية-01.png" class="img-fluid" alt="">
-              </a>
-              
-            </div>
-          </div>
-        
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <a href="https://www.ashoka.org/en-eg" target="_blank">
-                  <img src="assets/main/img/شعار منشآت.png" class="img-fluid" alt=""></a>
-         
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="client-logo">
-                <a href="https://www.ashoka.org/en-eg" target="_blank">
-                  <img src="assets/main/img/EthmarSocial.png" class="img-fluid" alt=""></a>
-           
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo">
+                  <a href="https://www.ashoka.org/en-eg" target="_blank">
+                    <img src="assets/main/img/EthmarSocial.png" class="img-fluid" alt=""></a>
+             
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo">
+                  <a href="https://www.ashoka.org/en-eg" target="_blank">
+                      <img src="assets/main/img/شعار منشآت.png" class="img-fluid" alt=""></a>
+             
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo">
+                  <a href="https://socialinnovationexchange.org/" target="_blank">
+                    <img src="assets/main/img/شعار وزارة الموارد البشرية والتنمية الاجتماعية-01.png" class="img-fluid" alt="">
+                  </a>
+                  
+                </div>
+              </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="client-logo g20">
+                <a href="https://www.baj.com.sa/en-us/" target="_blank">
+                <img src="assets/main/img/g20.png" class="img-fluid" alt=""></a>
               </div>
             </div>
-                  
+            
 
-        </div>
+          
+
+  
+
+                    
+  
+          </div>
+  
           
       
     </section>
@@ -391,7 +406,7 @@ License: You must have a valid license purchased only from themeforest(the above
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
               <a href="https://socialinnovationexchange.org/" target="_blank">
-                <img src="assets/main/img/six rgb large colour.png" class="img-fluid" alt="">
+                <img src="assets/main/img/SixOrg.png" class="img-fluid" alt="">
               </a>
               
             </div>
@@ -399,11 +414,11 @@ License: You must have a valid license purchased only from themeforest(the above
         
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <a href="https://www.ashoka.org/en-eg" target="_blank"><img src="assets/main/img/Arab World HR Logo.png" class="img-fluid" alt=""></a>
+              <a href="https://www.ashoka.org/en-eg" target="_blank"><img src="assets/main/img/AshokaOrg.png" class="img-fluid" alt=""></a>
          
             </div>
           </div>
-          
+
 
                   
 
@@ -420,7 +435,7 @@ License: You must have a valid license purchased only from themeforest(the above
       <div class="container-fluid">
 
         <div class="section-header">
-          <h6 class="Section2__title"> اتصل بنا </h6>
+          <h6 class="Section2__title"> Call us </h6>
           <div class="">
 <img src="assets/main/img/line.png" alt="" class="img-fluid">
                                     
@@ -439,7 +454,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="col-lg-3 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
               <div class="info-box">
                 <i class="fa fa-envelope"></i>
-                <h3>الإيميل</h3>
+                <h3>Email</h3>
                 <p>info@isif.social<br>pr@isif.social</p>
               </div>
             </div>
@@ -447,14 +462,14 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="col-lg-3 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
               <div class="info-box ">
                 <i class="fa fa-phone"></i>
-                <h3>اتصل بنا</h3>
+                <h3>Call us</h3>
                 <p>+966 11 269 4453<br>+966 55 032 6861</p>
               </div>
             </div>
             <div class="col-lg-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up">
               <div class="info-box">
                 <i class="fas fa-map-marker-alt"></i>
-                <h3>العنوان</h3>
+                <h3>Address</h3>
                 <p>An Nakheel, Imam Saud Ibn Abdul Aziz Road، Riyadh 12382, Saudi Arabia</p>
               </div>
             </div>
@@ -462,20 +477,20 @@ License: You must have a valid license purchased only from themeforest(the above
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="form-row">
                   <div class="col-lg-6 form-group">
-                    <input type="text" name="name" class="form-control text-right input__name" id="name" placeholder="الإسم" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <input type="text" name="name" class="form-control text-left input__name" id="name" placeholder="الإسم" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                     <div class="validate"></div>
                   </div>
                   <div class="col-lg-6 form-group">
-                    <input type="email" class="form-control text-right input__email" name="email" id="email" placeholder="الإيميل" data-rule="email" data-msg="Please enter a valid email">
+                    <input type="email" class="form-control text-left input__email" name="email" id="email" placeholder="الإيميل" data-rule="email" data-msg="Please enter a valid email">
                     <div class="validate"></div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control text-right input__subject" name="subject" id="subject" placeholder="الموضوع" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                  <input type="text" class="form-control text-left input__subject" name="subject" id="subject" placeholder="الموضوع" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control text-right input__message" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="الرسالة"></textarea>
+                  <textarea class="form-control text-left input__message" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="الرسالة"></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="text-center"><button type="submit">إرسال رسالة</button></div>
@@ -500,7 +515,7 @@ License: You must have a valid license purchased only from themeforest(the above
    <!--==========================
     Footer
   ============================-->
-  <footer id="footer" class="text-right mt-5">
+  <footer id="footer" class="text-left mt-5">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -544,7 +559,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <h4> أحداثنا</h4>
             <p>يمكنك متابعة أحداثنا و آخر الأخبار عبر الإيميل من خلال الإشتراك بخدمة الرسائل</p>
             <form action="" method="post">
-              <input type="email" name="email" class="text-right"><input type="submit"  value="اشتراك">
+              <input type="email" name="email" class="text-left"><input type="submit"  value="اشتراك">
             </form>
           </div>
         </div>

@@ -1,7 +1,49 @@
 
 /* Adjustment for mobile devices*/
+@font-face {
+  font-family: Paralucent;
+  src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: Paralucent;
+  src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+  font-style: normal;
+font-weight: 400;
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+  font-style: normal;
+font-weight: 500;
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+  font-style: normal;
+font-weight: 600;
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+  font-style: normal;
+font-weight: 700;
+}
 body{
-  font-family: Tajawal;
+  font-family:"HelveticaNeueLT Arabic 55 Roman";
 }
 .black--text{
   color: black;
@@ -46,7 +88,7 @@ body{
  
   .view {
     height: 100%;
-    color: #3F3D56;
+    color: #292829;
   }
 
   @media (max-width: 740px) {
@@ -84,7 +126,7 @@ body{
 .navbar.navbar-dark .breadcrumb .nav-item.active>.nav-link, .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
      background-color: transparent; 
     font-size: 15px;
-    color: #093047;
+    color: #034F8B;
     font-weight: bold;
     text-align: right;
 }
@@ -93,7 +135,9 @@ body{
     padding-right: 1rem;
     padding-left: 1rem;
 }  
-
+.offset-lg-1 {
+  margin-left: 0.333333%;
+}
 
 }
 .nav-link.dropdown-toggle:after, .btn.dropdown-toggle:after{
@@ -106,7 +150,7 @@ body{
   color: #093047;
 }
 .navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
-  color: #3F3D56;
+  color: #292829;
   transition: .35s;
   font-size: 15px;
   font-weight: 500;
@@ -211,7 +255,7 @@ body{
 /* Active state */
 .search-bar input:focus + .search-btn,
 .search-bar input:valid + .search-btn {
-  background: #1b4a95;
+  background: #034F8B;
   border-radius: 0 0.375em 0.375em 0;
   transform: scale(1);
   padding-left: 2.5pc;
@@ -264,7 +308,7 @@ body{
 .section1__title{
   font-size: 43px;
     font-weight: 900;
-    color: #196AAC;
+    color: #034F8B;
 }
 .date{
   font-size: 20px;
@@ -334,7 +378,7 @@ padding: 0.6rem 2.4rem;
    color: white;
    font-size: 16px !important;
    font-weight: bold;
-   font-family: Tajawal;
+   font-family: "HelveticaNeueLT Arabic 55 Roman";
 
  }
  .btn__getInTouch:hover {
@@ -606,30 +650,31 @@ font-weight: 600;
 
 
 #about .about-container .icon-box .title {
-  font-family: tajawal;
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
 }
 
 #about .about-container .icon-box:hover .icon {
   background: #3db3c5;
 }
 #about .about-container .icon-box .icon i {
-  color: #074F8B;
-  padding: 17px 15px;
+  color: #034F8B;
+  padding: 18px 18px;
+  font-size: 20px;
 
 }
 #about .about-container .icon-box .icon {
   border-radius: 56px;
-  border: 2px solid #074F8B;
+  border: 2px solid #034F8B;
 
 }
 #about .about-extra h4 {
-  font-family: tajawal;
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
 }
 .second__title{
   color: #3F3D56;
 }
 .second__title:hover {
-  color: #196AAC;
+  color: #034F8B;
 }
 .top-item{
   display: flex;
@@ -670,7 +715,7 @@ margin-top: 30px;
 
 #services .title a {
   color: #3F3D56;
-  font-family: tajawal;
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
   font-size: 20px;
 }
 #services .title a:hover {
@@ -701,7 +746,7 @@ font-size: 16px;
 padding: 8px;
 }
 #team .member h4 {
-  font-family: tajawal;
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
   font-size: 22px;
   color: #196AAC;
     font-weight: bold;
@@ -711,7 +756,7 @@ padding: 8px;
   display: block;
   font-size: 13px;
   color: #fff;
-  font-family: Tajawal;
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
 }
 #team .member .social a {
   transition: none;
@@ -719,20 +764,25 @@ padding: 8px;
   background: white;
   border: 1px solid white;
   border-radius: 50%;
-  padding: 5px;
+  padding: 4px;
+  padding-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.g20{
+  border-left: 3px solid lightblue;
 }
 /**********partners************/
-#clients {
+.clients {
   padding: 60px 0;
-  background-color: #ecf5ff;
+  /*background-color: #ecf5ff;*/
 }
-#clients .clients-wrap {
-  border-top: 1px solid #d6eaff;
-  border-left: 1px solid #d6eaff;
+.clients .clients-wrap {
+justify-content: center;
   margin-bottom: 30px;
 }
 
-#clients .client-logo {
+.clients .client-logo {
   padding: 64px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -746,19 +796,19 @@ padding: 8px;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-right: 1px solid #d6eaff;
-  border-bottom: 1px solid #d6eaff;
+  /*border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff;*/
   overflow: hidden;
   background: #fff;
   height: 160px;
 }
 
-#clients .client-logo:hover img {
+.clients .client-logo:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-#clients img {
+.clients img {
   transition: all 0.4s ease-in-out;
 }
 /********************Contact us*****/
@@ -782,10 +832,10 @@ padding: 8px;
 }
 .contact .info-box h3 {
   font-size: 18px;
-  color: #666;
+  color: #292829;
   font-weight: 700;
   margin: 10px 0;
-  font-family: Tajawal;
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
 }
 .contact .info-box p {
   padding: 0;
@@ -982,14 +1032,14 @@ padding: 8px;
 }
 
 #footer .footer-top h4 {
-  font-family: tajawal;
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
   font-size: 13px;
 }
 #footer .footer-top .social-links a {
   background: #ffffff;
 }
 #footer .footer-top .footer-info p {
-  font-family: tajawal !important;
+  font-family: "HelveticaNeueLT Arabic 55 Roman" !important;
   font-size: 14px;
 }
 .twitter , .facebook , .instagram , .youtube{
@@ -1039,9 +1089,9 @@ padding: 8px;
 .container-client{
   max-width: 1140px !important;
 }
-.mt-lg-top{
 
-  right: 9%;
+ .img-header{
+   margin-top: 120px;
  }
 }
 
