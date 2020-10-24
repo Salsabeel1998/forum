@@ -35,12 +35,12 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--end::Web font -->
 
 		<!--begin::Global Theme Styles -->
-		<link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+		<!--<link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />-->
 
-		<!--RTL version:<link href="assets/vendors/base/vendors.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
-		<link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--RTL version:--><link href="assets/vendors/base/vendors.bundle.rtl.css" rel="stylesheet" type="text/css" />
+		<!--<link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />-->
 
-		<!--RTL version:<link href="assets/demo/default/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+		<!--RTL version:--><link href="assets/demo/default/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="assets/main/css/Sign.css" rel="stylesheet" type="text/css">
 
 		<!--end::Global Theme Styles -->
@@ -63,8 +63,8 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a href="#" class="logo">
 										<img src="assets/main/img/logo.png">
 									</a>
-									<a href="SignInAR.html" class="Arabic">
-										<img src="assets/main/img/Ar.png" class="mt-3">
+									<a href="SignIn.html" class="Arabic">
+										<img src="assets/main/img/EN.png" class="mt-3">
 									</a>
 								</div>
 								<div class="m-login__signin">
@@ -72,7 +72,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="offset-lg-2"></div>
                                         <div class="col-lg-8 pl-0">
                                             <div class="m-login__head">
-                                                <h2 class="m-login__title text-left">Sign In</h2>
+                                                <h2 class="m-login__title text-left">تسجيل دخول</h2>
                                             </div>
                                         </div>
 
@@ -84,16 +84,16 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="row ">
                                            <div class="offset-lg-2"></div>
 											<div class="col-lg-8 form-group m-form__group">
-												<label for="exampleInputEmail1">Email <span class="requiredInput">*</span></label>
-												<input type="email" class="form-control m-input m-input--square" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" name="email">
+												<label for="exampleInputEmail1">الايميل <span class="requiredInput">*</span></label>
+												<input type="email" class="form-control m-input m-input--square" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="أدخل ايميلك" name="email">
 											</div>
                                             <div class="offset-lg-2"></div>
 											</div>
 											<div class="row justify-content-between pt-lg-4">
                                                 <div class="offset-lg-2"></div>
 												<div class="col-lg-8 form-group m-form__group">
-													<label for="exampleInputFirstName1">Password <span class="requiredInput">*</span></label>
-													<input class="form-control m-input m-input--square" type="password" placeholder="Password" name="password">
+													<label for="exampleInputFirstName1">كلمة السر <span class="requiredInput">*</span></label>
+													<input class="form-control m-input m-input--square" type="password" placeholder="أدخل كلمة المرور" name="password">
 												</div>
                                                 <div class="offset-lg-2"></div>
 											</div>
@@ -101,21 +101,21 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <div class="offset-lg-2"></div>
                                                 <div class="col-lg-4  m--align-left pl-0 ">
                                                     <label class="m-checkbox">
-                                                        <input type="checkbox"> Remember me
+                                                        <input type="checkbox"> تذكرني
                                                         <span></span>
                                                     </label>
                                                   
                                                 </div>
                                                 <div class="offset-lg-1"></div>
                                                 <div class="col-lg-3 forget-password-link">
-                                                    <a href="javascript:;" id="m_login_forget_password" class="m-link ">Forget Password ?</a>
+                                                    <a href="javascript:;" id="m_login_forget_password" class="m-link ">نسيت كلمة المرور ؟</a>
                                                 </div>
                                                 <div class="offset-lg-2"></div>
                                             </div>                                               
                                              <div class="row  pt-5 pl-0 ">	
 												<div class="offset-lg-2"></div>
 												<div class="col-lg-8 d-flex flex-end pr-0">
-													<a href="SignUp.html"id="m_login_signin_submit" class="btn btn-primary m-btn m-btn--custom m-btn--icon pl-5 pr-5">Sign In</a>
+													<a href="SignUp.html"id="m_login_signin_submit" class="btn btn-primary m-btn m-btn--custom m-btn--icon pl-5 pr-5">تسجيل دخول</a>
 												</div>
 												
 												<div class="offset-lg-2"></div>
@@ -132,21 +132,21 @@ License: You must have a valid license purchased only from themeforest(the above
 
 								<div class="m-login__forget-password">
 									<div class="m-login__head">
-										<h3 class="m-login__title">Forgotten Password ?</h3>
-										<div class="m-login__desc">Enter your email to reset your password:</div>
+										<h3 class="m-login__title">نسيت كلمة المرور ؟</h3>
+										<div class="m-login__desc">أدخل ايميلك لاستعادة كلمة المرور</div>
 									</div>
 									<form class="m-login__form m-form" action="">
                                         <div class="row">
                                             <div class="offset-lg-2"></div>
                                             <div class="col-lg-8 form-group m-form__group">
-                                                <input class="form-control m-input" type="text" placeholder="Email" name="email" id="m_email" autocomplete="off">
+                                                <input class="form-control m-input" type="text" placeholder="الايميل" name="email" id="m_email" autocomplete="off">
                                             </div>
                                             <div class="offset-lg-2"></div>
                                         </div>
 
 										<div class="m-login__form-action">
-											<button id="m_login_forget_password_submit" class="btn btn-primary m-btn m-btn--custom m-btn--icon pl-5 pr-5">Request</button>
-											<button id="m_login_forget_password_cancel" class="btn-Cancel">Cancel</button>
+											<button id="m_login_forget_password_submit" class="btn btn-primary m-btn m-btn--custom m-btn--icon pl-5 pr-5">ارسال</button>
+											<button id="m_login_forget_password_cancel" class="btn-Cancel">إغلاق</button>
 										</div>
 									</form>
 								</div>
@@ -155,16 +155,16 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="m-stack__item m-stack__item--center">
 							<div class="m-login__account mb-5">
 								<span class="m-login__account-msg">
-                                    Don't have an account yet ?
+                                   ليس لديك حساب ؟
 								</span>&nbsp;&nbsp;
-								<a href="SignUpEN.html" id="" class="m-link m-link--focus m-login__account-link">Sign Up</a>
+								<a href="SignUpAR.html" id="" class="m-link m-link--focus m-login__account-link">تسجيل حساب جديد</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="m-grid__item m-grid__item--fluid m-grid m-grid--center m-grid--hor m-grid__item--order-tablet-and-mobile-1	m-login__content m-grid-item--center" style="background-image: url(assets/main/img/background.png)">
 					<div class="m-grid__item">
-						<h3 class="m-login__welcome">Join Our Community</h3>
+						<h3 class="m-login__welcome">انضم لمجتمعنا</h3>
 						<p class="m-login__msg">
 							Lorem ipsum dolor sit amet, coectetuer adipiscing<br>elit sed diam nonummy et nibh euismod
 						</p>

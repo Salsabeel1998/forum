@@ -1,5 +1,53 @@
 
+@font-face {
+    font-family: Paralucent;
+    src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+    font-style: normal;
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: Paralucent;
+    src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+    font-style: normal;
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: "HelveticaNeueLT Arabic 55 Roman";
+    src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+    font-style: normal;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "HelveticaNeueLT Arabic 55 Roman";
+    src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+    font-style: normal;
+  font-weight: 400;
+  }
+  @font-face {
+    font-family: "HelveticaNeueLT Arabic 55 Roman";
+    src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+    font-style: normal;
+  font-weight: 500;
+  }
+  @font-face {
+    font-family: "HelveticaNeueLT Arabic 55 Roman";
+    src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+    font-style: normal;
+  font-weight: 600;
+  }
+  @font-face {
+    font-family: "HelveticaNeueLT Arabic 55 Roman";
+    src: url(../fonts/helveticaneuelt-arabic-55-roman.ttf);
+    font-style: normal;
+  font-weight: 700;
+  }
+  body{
+    font-family:"HelveticaNeueLT Arabic 55 Roman";
+  }
+  .btn.m-btn--custom {
 
+    font-family:"HelveticaNeueLT Arabic 55 Roman";
+}
 .m-login__logo{
     display: flex;
     justify-content: space-between;
