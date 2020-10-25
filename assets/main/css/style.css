@@ -96,7 +96,7 @@ body{
     body,
     header,
     .view {
-      height: 820px;
+      /*height: 820px;*/
     }
   }
 
@@ -283,25 +283,7 @@ body{
 	transform: translateY(1px);
 }
 
-@media screen and (prefers-color-scheme: dark) {
-	body, input {
-		color: #f1f1f1;
-	}
-	body {
-		background: #171717;
-	}
-	.search-bar input {
-		box-shadow: 0 0 0 0.4em #f1f1f1 inset;
-	}
-	.search-bar input:focus,
-	.search-bar input:valid {
-		background: #3d3d3d;
-		box-shadow: 0 0 0 0.1em #3d3d3d inset;
-	}
-	.search-btn {
-		background: #f1f1f1;
-	}
-}
+
 
 
 /******************************/
@@ -903,6 +885,11 @@ justify-content: center;
   
   margin-top: 157px !important;
 }
+.card-deck .card {
+
+  flex: auto;
+
+}
 }
 
 
@@ -940,6 +927,7 @@ justify-content: center;
  .img-header{
    margin-top: 120px;
  }
+
 }
 
 /*btn_background*/
@@ -990,7 +978,6 @@ justify-content: center;
 
 /*******Live Session page*********/
 #Session{
- 
   background-image: url(../img/session-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1009,6 +996,12 @@ height: 60vh;
 .session__brief{
   text-align: center;
   margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+}
+.sessionDetail__brief{
+  text-align: center;
   font-size: 15px;
   padding-bottom: 60px;
   color: #556877;
@@ -1038,6 +1031,37 @@ height: 60vh;
 .m-messenger .m-messenger__form .m-messenger__form-controls .m-messenger__form-input{
   font-size: 14px;
 }
+/*********ٌRecord Session************/
+.RecordSession{
+  background-image: url(../img/european-parliament-conference-room-brussels-GRXD6VR.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+height: 60vh;
+}
+.card .card-body .card-text {
+ font-size: 15px;
+}
+.card-title {
+  font-size: 20px;
+  color: #292829;
+}
+.btn-detail{
+  padding: 12px 16px;
+  border-radius: 100%;
+  font-size: 19px;
+  color: white;
+  background: rgb(3,79,139);
+  background: linear-gradient(45deg, rgba(3,79,139,1) 58%, rgba(68,154,193,1) 100%);
+}
+.height-col{
+  height: 60vh;
+}
+
+
+
+
+/********************************/
 .scrollbar {
   margin-left: 30px;
 
@@ -1130,4 +1154,13 @@ height: 60vh;
 .txt-policy-desc{
   font-size: 18px;
   line-height: 27px;
+}
+.right_ico{
+ background-image: url(../img/left.png) !important;
+}
+.left_ico{
+  background-image: url(../img/right.png) !important;
+}
+.right-direction{
+  right: 0 !important;
 }
