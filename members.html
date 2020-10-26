@@ -1,340 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>ISIF</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ISIF" name="keywords">
-    <meta content="ISIF" name="description">
 
-    <!-- Favicons -->
-    <link  href="https://forum.isif.social/public/isif/img/isif.png" rel="icon">
-    <link  href="https://forum.isif.social/public/isif/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<!-- begin::Head -->
+	<head>
+		<meta charset="utf-8" />
+		<title>ISFI-Live Sessions</title>
+		<meta name="description" content="Latest updates and statistic charts">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+		<!--begin::Web font -->
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+		<script>
+			WebFont.load({
+            google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+          });
+        </script>
+
+		<!--end::Web font -->
+
+		<!--begin::Global Theme Styles -->
+        <!--RTL version:-->
+        <!--RTL version:-->
+            <link href="assets/demo/default/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Global Theme Styles -->
+		<link rel="shortcut icon" href="assets/main/img/logo.png" />
 
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Poppins -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,600,700&display=swap">
 
-            <link href="https://forum.isif.social/public/isif/css/vendors.bundle.css"rel="stylesheet">
-        <link href="https://forum.isif.social/public/isif/css/style.bundle.css"rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="assets/main/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap -->
+        <link rel="stylesheet" href="assets/main/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="assets/main/css/style.css">
+	</head>
+
+	<!-- end::Head -->
+
+	<!-- begin::Body -->
+	<body class="">
+
+		<!-- begin:: Page -->
+         <header>
+                 <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container-fluid p-0">
     
+          <!-- Brand -->
+          <a class="navbar-brand pr-lg-0 mr-lg-0" href="#" target="_blank">
+            <img src="assets/main/img/logo.png" alt="">
+          </a>
+    
+          <!-- Collapse -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Links -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+    
+            <!-- Left -->
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="Home.html">الصفحة الرئيسية
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">البرامج <img src="assets/main/img/down.png" alt="" class="img-fluid"></a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="Forum.html">المنتدى الرئيسي</a>
+                  <a class="dropdown-item" href="LiveSession.html">الجلسات المباشرة</a>
+                  <a class="dropdown-item" href="RecordedSession.html">الجلسات المسجلة</a>
+                  <a class="dropdown-item" href="Members.html">الأعضاء</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Home.html" target="_blank">اتصل بنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="SignIn.html" target="_blank">تسجيل الدخول</a>
+              </li>
 
-    <!-- Bootstrap CSS File -->
-
-    <link href="https://forum.isif.social/public/isif/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
-    <link href="https://forum.isif.social/public/isif/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://forum.isif.social/public/isif/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="https://forum.isif.social/public/isif/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="https://forum.isif.social/public/isif/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
-    <!-- Main Stylesheet File -->
-    <link href="https://forum.isif.social/public/isif/css/style.css" rel="stylesheet">
-    <link href="https://forum.isif.social/public/isif/css/Moltaqa.css" rel="stylesheet">
-    <link media="all" type="text/css" rel="stylesheet" href="https://forum.isif.social/public/css/sweetalert.css">
-
-
-    <style>
-        .hr2{
-            margin-top: -15px;
-        }
-        #contact {
-            box-shadow: none;
-
-        }
-    </style>
-    <script>
-        window.Laravel = {"csrfToken":"IEilEGgS6ovUakNomfIZmawh6ATpTlX2e76R7r42"};
-    </script>
-<!-- =======================================================
-      Theme Name: NewBiz
-      Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-      Author: BootstrapMade.com
-      License: https://bootstrapmade.com/license/
-    ======================================================= -->
-</head>
-
-<body>
-
-<!--==========================
-Header
-============================-->
-<header id="header" class="fixed-top">
-    <div class="container">
-        <nav class="main-nav float-left d-none d-lg-block">
-            <ul class="text-right">
-                <li >
-                                                    <a href="https://forum.isif.social/ar/members">
-                                <img src="https://forum.isif.social/public/isif/Content/WebSite/en-ar/ar/img/W-ar.png" alt="" style="height: 20px;">
-                            </a>
-                                        </li>
-                <li><a href="https://forum.isif.social/contact" class="text-white">Contact Us</a></li>
-
-                                    <li><a href="https://forum.isif.social/login" class="text-white">Login</a></li>
-                                 
-                <li class="drop-down"><a href="" class="text-white">Main Forum</a>
-                    <ul>
-                        <li><a href="https://forum.isif.social/live-sessions" class="text-white">Live sessions</a></li>
-                        <li><a href="https://forum.isif.social/old-sessions" class="text-white">Archive sessions</a></li>
-                        <li><a href="https://forum.isif.social/members">Members</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://isif.social/" class="text-white">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="MembersEN.html"><img src="assets/main/img/EN.png" class="img-fluid"/></a>
+              </li>
+              <li class="nav-item">
+            
+                    <form action="" class="nav-link search-bar d-flex pt-0">
+                        <input type="search" name="search" pattern=".*\S.*" required>
+                        <button class="search-btn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+               
+              </li>
             </ul>
-        </nav><!-- .main-nav -->
-        <div class="logo float-right">
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-            <a href="https://forum.isif.social" ><img src="https://forum.isif.social/public/isif/img/isif.png" alt=""></a>
+    
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+
+              <li class="nav-item">
+                <a href="https://www.facebook.com/ISIF20" class="nav-link" target="_blank">
+                    <i class="fab fa-facebook-f"></i> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/isif_20" class="nav-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.instagram.com/isif_20" class="nav-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+    
+        </div>
+      </nav>
+
+
+      <!-- Navbar -->
+         </header>
+<main>
+  <div class="section member" id="">
+    <div class="container-fluid">
+        <div class="row text-right justify-content-between pt-lg-5 mt-lg-5 mt-lg-top ">
+            <h1 class="session__title session__background mt-5 pt-5 pb-5 text-center">
+         الأعضاء
+              </h1>
+          
+
+
         </div>
     </div>
-</header><!-- #header -->
+ </div>
+ <section>
+   <div class="container mt-5">
+    <div class="container">
+      <div class="section-header text-center">
+          <h6 class="Section2__title"> نبذة عن الأعضاء</h6>
+          <div class="">
+              <img src="assets/main/img/line.png" alt="" class="img-fluid">                       
+          </div>
 
-<!--==========================
-  Intro Section
-============================-->
-<main id="main">
-    
-        <div class="hero-section inner-page">
-            <div class="wave">
-
-                <svg width="1920px" height="265px" viewBox="0 0 1920 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
-                            <path d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,667 L1017.15166,667 L0,667 L0,439.134243 Z" id="Path"></path>
-                        </g>
-                    </g>
-                </svg>
-
-            </div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 mt-5">
-                        <div class="row justify-content-center">
-                            <div class="col-md-7 text-center hero-text mt-lg-5 wow fadeInDownBig">
-                                <h1 class="font-weight color-white" data-aos="fade-up" data-aos-delay="">Members</h1>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+      
+        </div>
+        <div class="row">
+          <p class="session__brief p-3">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
         </div>
 
-        <section id="guide" class="guide pt-3">
-            <div class="container">
-                <div class="section-header">
-                    <h6>Members</h6>
-                    <hr class="hr1">
-                    <hr class="hr2">
-                </div>
-                <div class="row pt-5">
-                                        <div class="col-xl-3 col-lg-4 col-md-6  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.8s">
-                        <div class="member">
-                            <div class="pic img-hover-zoom"><img src="https://forum.isif.social/public/uploads/files" height="400" width="500" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4> Mahmoud Web</h4>
-                                <span>1</span>
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.8s">
-                        <div class="member">
-                            <div class="pic img-hover-zoom"><img src="https://forum.isif.social/public/uploads/files" height="400" width="500" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4> Mahmoud</h4>
-                                <span></span>
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.8s">
-                        <div class="member">
-                            <div class="pic img-hover-zoom"><img src="http://laraflat.com/img/logo.png" height="400" width="500" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4> Mahmoud</h4>
-                                <span>www</span>
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.8s">
-                        <div class="member">
-                            <div class="pic img-hover-zoom"><img src="https://forum.isif.social/public/uploads/files/86586_1602600691.jpg" height="400" width="500" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4> Mahmoud</h4>
-                                <span>33</span>
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.8s">
-                        <div class="member">
-                            <div class="pic img-hover-zoom"><img src="https://forum.isif.social/public/uploads/files/37483_1603047225.png" height="400" width="500" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4> it</h4>
-                                <span>rtg</span>
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.8s">
-                        <div class="member">
-                            <div class="pic img-hover-zoom"><img src="https://forum.isif.social/public/uploads/files" height="400" width="500" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4> Mahmoud</h4>
-                                <span>1</span>
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.8s">
-                        <div class="member">
-                            <div class="pic img-hover-zoom"><img src="https://forum.isif.social/public/uploads/files" height="400" width="500" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4> Sahara</h4>
-                                <span>account manager</span>
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.8s">
-                        <div class="member">
-                            <div class="pic img-hover-zoom"><img src="https://forum.isif.social/public/uploads/files/94783_1603344969.png" height="400" width="500" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4> MOHAMMED</h4>
-                                <span>NA</span>
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                                    </div>
+     <div class="row">
+       <div class="col-lg-4 mb-5">
+         <div class="card flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-up">
+                <img class="card-img-top" src="assets/main/img/bg-card.png" alt="Image with a photo of clouds.">
+              </div>
+              <div class="avatar mx-auto white"><img src="assets/main/img/speaker3.png" class="rounded-circle" alt="Sample avatar image.">
+              </div>
+              <div class="card-body">
+                <p class="font-weight-bold  mb-3 user_name">اسم المستخدم</p>
+                <h3 class="font-weight-bold mb-3 pb-1 job_title">المسمى الوظيفي</h3>
+                <!-- Triggering button -->
+              
+              </div>
             </div>
+            <div class="flip-card-back p-3">
+              <div class="d-flex">
+                <i class="fas fa-envelope  icon-time icon-padding"></i><p class="session-time-text pr-2">الإيميل :</p><p class="text-time pr-1">UserEmail@gmail.com</p>
+              </div>
+              <div class="d-flex">
+                <i class="fas fa-map-pin icon-time icon-padding"></i><p class="session-time-text pr-2">الدولة :</p><p class="text-time pr-1">المملكة العربية السعودية</p>
+              </div>
+              <div class="d-flex">
+                <i class="fas fa-map-marker-alt icon-time icon-padding"></i><p class="session-time-text pr-2">الجنسية :</p><p class="text-time pr-1">سعودي</p>
+              </div>
+              <div class="d-flex">
+                <i class="fas fa-user icon-time icon-padding"></i><p class="session-time-text pr-2 mb-0">نبذة تعريفية :</p>
+              </div>
+              <p class="text-time pr-1 text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+              <div class="d-flex">
+                <i class="fas fa-map-marked-alt icon-time icon-padding"></i><p class="session-time-text pr-2">مكان العمل :</p><p class="text-time pr-1">الرياض</p>
+              </div>
+              <div class="d-flex">
+                <i class="fas fa-phone icon-time icon-padding"></i><p class="session-time-text pr-2"> رقم الهاتف :</p><p class="text-time pr-1">+966 00 000 0000</p>
+              </div>
+              <div>
 
-        </section>
+            </div>
+          </div>
+
+         </div>
+
+       </div>
+     </div>
+     <div class="col-lg-4 mb-5">
+      <div class="card flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <div class="card-up">
+             <img class="card-img-top" src="assets/main/img/bg-card.png" alt="Image with a photo of clouds.">
+           </div>
+           <div class="avatar mx-auto white"><img src="assets/main/img/speaker2.png" class="rounded-circle" alt="Sample avatar image.">
+           </div>
+           <div class="card-body">
+             <p class="font-weight-bold  mb-3 user_name">اسم المستخدم</p>
+             <h3 class="font-weight-bold mb-3 pb-1 job_title">المسمى الوظيفي</h3>
+             <!-- Triggering button -->
+           
+           </div>
+         </div>
+         <div class="flip-card-back p-3">
+           <div class="d-flex">
+             <i class="fas fa-envelope  icon-time icon-padding"></i><p class="session-time-text pr-2">الإيميل :</p><p class="text-time pr-1">UserEmail@gmail.com</p>
+           </div>
+           <div class="d-flex">
+             <i class="fas fa-map-pin icon-time icon-padding"></i><p class="session-time-text pr-2">الدولة :</p><p class="text-time pr-1">المملكة العربية السعودية</p>
+           </div>
+           <div class="d-flex">
+             <i class="fas fa-map-marker-alt icon-time icon-padding"></i><p class="session-time-text pr-2">الجنسية :</p><p class="text-time pr-1">سعودي</p>
+           </div>
+           <div class="d-flex">
+             <i class="fas fa-user icon-time icon-padding"></i><p class="session-time-text pr-2 mb-0">نبذة تعريفية :</p>
+           </div>
+           <p class="text-time pr-1 text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+           <div class="d-flex">
+             <i class="fas fa-map-marked-alt icon-time icon-padding"></i><p class="session-time-text pr-2">مكان العمل :</p><p class="text-time pr-1">الرياض</p>
+           </div>
+           <div class="d-flex">
+             <i class="fas fa-phone icon-time icon-padding"></i><p class="session-time-text pr-2"> رقم الهاتف :</p><p class="text-time pr-1">+966 00 000 0000</p>
+           </div>
+           <div>
+
+         </div>
+       </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="col-lg-4 mb-5">
+    <div class="card flip-card">
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+         <div class="card-up">
+           <img class="card-img-top" src="assets/main/img/bg-card.png" alt="Image with a photo of clouds.">
+         </div>
+         <div class="avatar mx-auto white"><img src="assets/main/img/speaker1.png" class="rounded-circle" alt="Sample avatar image.">
+         </div>
+         <div class="card-body">
+           <p class="font-weight-bold  mb-3 user_name">اسم المستخدم</p>
+           <h3 class="font-weight-bold mb-3 pb-1 job_title">المسمى الوظيفي</h3>
+           <!-- Triggering button -->
+         
+         </div>
+       </div>
+       <div class="flip-card-back p-3">
+         <div class="d-flex">
+           <i class="fas fa-envelope  icon-time icon-padding"></i><p class="session-time-text pr-2">الإيميل :</p><p class="text-time pr-1">UserEmail@gmail.com</p>
+         </div>
+         <div class="d-flex">
+           <i class="fas fa-map-pin icon-time icon-padding"></i><p class="session-time-text pr-2">الدولة :</p><p class="text-time pr-1">المملكة العربية السعودية</p>
+         </div>
+         <div class="d-flex">
+           <i class="fas fa-map-marker-alt icon-time icon-padding"></i><p class="session-time-text pr-2">الجنسية :</p><p class="text-time pr-1">سعودي</p>
+         </div>
+         <div class="d-flex">
+           <i class="fas fa-user icon-time icon-padding"></i><p class="session-time-text pr-2 mb-0">نبذة تعريفية :</p>
+         </div>
+         <p class="text-time pr-1 text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+         <div class="d-flex">
+           <i class="fas fa-map-marked-alt icon-time icon-padding"></i><p class="session-time-text pr-2">مكان العمل :</p><p class="text-time pr-1">الرياض</p>
+         </div>
+         <div class="d-flex">
+           <i class="fas fa-phone icon-time icon-padding"></i><p class="session-time-text pr-2"> رقم الهاتف :</p><p class="text-time pr-1">+966 00 000 0000</p>
+         </div>
+         <div>
+
+       </div>
+     </div>
+
+    </div>
+
+  </div>
+</div>
+
+   </div> 
+   <div class="row">
+    <div class="col-lg-4 mb-5">
+      <div class="card flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <div class="card-up">
+             <img class="card-img-top" src="assets/main/img/bg-card.png" alt="Image with a photo of clouds.">
+           </div>
+           <div class="avatar mx-auto white"><img src="assets/main/img/speaker4.png" class="rounded-circle" alt="Sample avatar image.">
+           </div>
+           <div class="card-body">
+             <p class="font-weight-bold  mb-3 user_name">اسم المستخدم</p>
+             <h3 class="font-weight-bold mb-3 pb-1 job_title">المسمى الوظيفي</h3>
+             <!-- Triggering button -->
+           
+           </div>
+         </div>
+         <div class="flip-card-back p-3">
+           <div class="d-flex">
+             <i class="fas fa-envelope  icon-time icon-padding"></i><p class="session-time-text pr-2">الإيميل :</p><p class="text-time pr-1">UserEmail@gmail.com</p>
+           </div>
+           <div class="d-flex">
+             <i class="fas fa-map-pin icon-time icon-padding"></i><p class="session-time-text pr-2">الدولة :</p><p class="text-time pr-1">المملكة العربية السعودية</p>
+           </div>
+           <div class="d-flex">
+             <i class="fas fa-map-marker-alt icon-time icon-padding"></i><p class="session-time-text pr-2">الجنسية :</p><p class="text-time pr-1">سعودي</p>
+           </div>
+           <div class="d-flex">
+             <i class="fas fa-user icon-time icon-padding"></i><p class="session-time-text pr-2 mb-0">نبذة تعريفية :</p>
+           </div>
+           <p class="text-time pr-1 text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+           <div class="d-flex">
+             <i class="fas fa-map-marked-alt icon-time icon-padding"></i><p class="session-time-text pr-2">مكان العمل :</p><p class="text-time pr-1">الرياض</p>
+           </div>
+           <div class="d-flex">
+             <i class="fas fa-phone icon-time icon-padding"></i><p class="session-time-text pr-2"> رقم الهاتف :</p><p class="text-time pr-1">+966 00 000 0000</p>
+           </div>
+           <div>
+
+         </div>
+       </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="col-lg-4 mb-5">
+   <div class="card flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card-up">
+          <img class="card-img-top" src="assets/main/img/bg-card.png" alt="Image with a photo of clouds.">
+        </div>
+        <div class="avatar mx-auto white"><img src="assets/main/img/speaker5.png" class="rounded-circle" alt="Sample avatar image.">
+        </div>
+        <div class="card-body">
+          <p class="font-weight-bold  mb-3 user_name">اسم المستخدم</p>
+          <h3 class="font-weight-bold mb-3 pb-1 job_title">المسمى الوظيفي</h3>
+          <!-- Triggering button -->
+        
+        </div>
+      </div>
+      <div class="flip-card-back p-3">
+        <div class="d-flex">
+          <i class="fas fa-envelope  icon-time icon-padding"></i><p class="session-time-text pr-2">الإيميل :</p><p class="text-time pr-1">UserEmail@gmail.com</p>
+        </div>
+        <div class="d-flex">
+          <i class="fas fa-map-pin icon-time icon-padding"></i><p class="session-time-text pr-2">الدولة :</p><p class="text-time pr-1">المملكة العربية السعودية</p>
+        </div>
+        <div class="d-flex">
+          <i class="fas fa-map-marker-alt icon-time icon-padding"></i><p class="session-time-text pr-2">الجنسية :</p><p class="text-time pr-1">سعودي</p>
+        </div>
+        <div class="d-flex">
+          <i class="fas fa-user icon-time icon-padding"></i><p class="session-time-text pr-2 mb-0">نبذة تعريفية :</p>
+        </div>
+        <p class="text-time pr-1 text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+        <div class="d-flex">
+          <i class="fas fa-map-marked-alt icon-time icon-padding"></i><p class="session-time-text pr-2">مكان العمل :</p><p class="text-time pr-1">الرياض</p>
+        </div>
+        <div class="d-flex">
+          <i class="fas fa-phone icon-time icon-padding"></i><p class="session-time-text pr-2"> رقم الهاتف :</p><p class="text-time pr-1">+966 00 000 0000</p>
+        </div>
+        <div>
+
+      </div>
+    </div>
+
+   </div>
+
+ </div>
+</div>
+<div class="col-lg-4 mb-5">
+ <div class="card flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="card-up">
+        <img class="card-img-top" src="assets/main/img/bg-card.png" alt="Image with a photo of clouds.">
+      </div>
+      <div class="avatar mx-auto white"><img src="assets/main/img/speaker6.png" class="rounded-circle" alt="Sample avatar image.">
+      </div>
+      <div class="card-body">
+        <p class="font-weight-bold  mb-3 user_name">اسم المستخدم</p>
+        <h3 class="font-weight-bold mb-3 pb-1 job_title">المسمى الوظيفي</h3>
+        <!-- Triggering button -->
+      
+      </div>
+    </div>
+    <div class="flip-card-back p-3">
+      <div class="d-flex">
+        <i class="fas fa-envelope  icon-time icon-padding"></i><p class="session-time-text pr-2">الإيميل :</p><p class="text-time pr-1">UserEmail@gmail.com</p>
+      </div>
+      <div class="d-flex">
+        <i class="fas fa-map-pin icon-time icon-padding"></i><p class="session-time-text pr-2">الدولة :</p><p class="text-time pr-1">المملكة العربية السعودية</p>
+      </div>
+      <div class="d-flex">
+        <i class="fas fa-map-marker-alt icon-time icon-padding"></i><p class="session-time-text pr-2">الجنسية :</p><p class="text-time pr-1">سعودي</p>
+      </div>
+      <div class="d-flex">
+        <i class="fas fa-user icon-time icon-padding"></i><p class="session-time-text pr-2 mb-0">نبذة تعريفية :</p>
+      </div>
+      <p class="text-time pr-1 text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+      <div class="d-flex">
+        <i class="fas fa-map-marked-alt icon-time icon-padding"></i><p class="session-time-text pr-2">مكان العمل :</p><p class="text-time pr-1">الرياض</p>
+      </div>
+      <div class="d-flex">
+        <i class="fas fa-phone icon-time icon-padding"></i><p class="session-time-text pr-2"> رقم الهاتف :</p><p class="text-time pr-1">+966 00 000 0000</p>
+      </div>
+      <div>
+
+    </div>
+  </div>
+
+ </div>
+
+</div>
+</div>
+
+</div>
+ </section>
 
 </main>
-<!--==========================
-  Footer
-============================-->
-<footer id="footer" class="text-right">
+   <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="text-right mt-5">
     <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 footer-info">
-                    <h4>About Forum</h4>
-                    <p>Spreading the culture of social innovation at all target levels and empowering social innovators, highlighting advanced tools and methodologies in the field and creative ideas
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><a href="https://forum.isif.social" class="text-white">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="https://forum.isif.social/news" >News</a></li>
-                        <li><a href="#">Policy</a></li>
-                        <li><a href="https://forum.isif.social/contact" >Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 footer-contact">
-                    <h4>Contact Us</h4>
-                    <p>
-                        السعودية , الرياض
-                        <br>
-                        <br> +1 5589 55488 55<strong>: Phone</strong>
-                        <br> info@example.com <strong> : Email</strong>
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h4>عن الملتقى</h4>
+            <p>نشر ثقافة الابتكار 
+              ملتقى دولي مختص يقام ضمن هامش ملتقيات قمة العشرين يدعم ممارسات مجال الابتكار الاجتماعي عن طريق أدوات متطورة وشراكات فاعلة وتمكين حقيقي لصناعة السوق ومعالجة القضايا المجتمعية بصورة مستدامة
 
 
+              </p>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>روابط مفيدة</h4>
+            <ul>
+              <li><a href="Home.html">الصفحة الرئيسية</a></li>
+              <li><a href="Home.html">من نحن</a></li>        
+              <li><a href="Home.html">اتصل بنا </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>للتواصل</h4>
+            <p>
+              Imam Saud Ibn Abdul Aziz Road، Riyadh <br>
+              12382, Saudi Arabia<br>
+              السعودية <br>
+              <strong>: رقم الهاتف</strong> <br> +966 55 032 6861
+              <br> info@isif.social <strong>: البريد الإلكتروني</strong>
+            </p>
 
+            <div class="social-links">
+              <a href="https://www.facebook.com/ISIF20" class="" target="_blank"><i class="fab fa-facebook facebook"></i></a>
+              <a href="https://twitter.com/isif_20" class="" target="_blank"><i class="fab fa-twitter twitter"></i></a>
+              <a href="https://www.instagram.com/isif_20/" class="" target="_blank"><i class="fab fa-instagram instagram"></i></a>
+              <a href="#" class="" target="_blank"><i class="fab fa-youtube youtube" ></i></a>
+             
             </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4> أحداثنا</h4>
+            <p>يمكنك متابعة أحداثنا و آخر الأخبار عبر الإيميل من خلال الإشتراك بخدمة الرسائل</p>
+            <form action="" method="post">
+              <input type="email" name="email" class="text-right"><input type="submit"  value="اشتراك">
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="copyright">
-            جميع الحقوق محفوظة ل  <strong>ملتقى الإبتكار الإجتماعي</strong>
-        </div>
-    </div>
-</footer><!-- #footer -->
-<!--==========================
-Start Pop Up:
- ============================-->
-<!----PopUp1-->
+      <div class="copyright">
+        جميع الحقوق محفوظة © الملتقى الدولي للإبتكار الإجتماعي - 2020
 
-<!--==========================
- End Pop Up:
-  ============================-->
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<!-- Uncomment below i you want to use a preloader -->
-<!-- <div id="preloader"></div> -->
-<script src="https://forum.isif.social/public/js/sweetalert.min.js"></script>
-<!-- JavaScript Libraries -->
-<script src="https://forum.isif.social/public/isif/js/vendors.bundle.js"></script>
-<script src="https://forum.isif.social/public/isif/js/scripts.bundle.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/jquery/jquery.min.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/jquery/jquery-migrate.min.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/easing/easing.min.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/mobile-nav/mobile-nav.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/wow/wow.min.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/waypoints/waypoints.min.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/counterup/counterup.min.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/isotope/isotope.pkgd.min.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/lightbox/js/lightbox.min.js"></script>
-<!-- Contact Form JavaScript File -->
-<script src="https://forum.isif.social/public/isif/contactform/contactform.js"></script>
-<script src="https://forum.isif.social/public/isif/lib/animate/aos.js"></script>
-<!-- Template Main Javascript File -->
-<script src="https://forum.isif.social/public/isif/js/main.js"></script>
-<script src="https://forum.isif.social/public/js/fontawesome-iconpicker.min.js"></script>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+	
+
+        <!--begin::Global Theme Bundle -->
+
+
+		<!--end::Global Theme Bundle -->
+  <!-- jQuery -->
+  <scrip type="text/javascript" src="assets/main/js/jquery-3.4.1.min.js"></scrip>
+  <!-- Bootstrap tooltips -->
+  <scrip type="text/javascript" src="assets/main/js/popper.min.js"></scrip>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/main/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="assets/main/js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+		<!--begin::Page Scripts -->
+
 <script>
-    $('.icon-field').iconpicker();
+  $('.carousel').carousel({
+interval: false
+})
 </script>
-</body>
+		<!--end::Page Scripts -->
+	</body>
+
+	<!-- end::Body -->
 </html>
