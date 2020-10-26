@@ -1275,7 +1275,7 @@ height: 60vh;
 /********************/
 .flip-card {
   background-color: transparent;
-  height: 400px;
+  height: 450px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -1351,4 +1351,7 @@ height: 60vh;
 }
 .icon-padding{
   padding: 8px 9px;
+}
+.btn-chat{
+  padding: 16px 16px !important;
 }
