@@ -1239,7 +1239,7 @@ height: 60vh;
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
  transform: rotateY(180deg);
- border-bottom: 5px solid #034F8B;
+ /*border-bottom: 5px solid #034F8B;*/
 }
 
 /* Position the front and back side */
@@ -1298,9 +1298,7 @@ height: 60vh;
 .icon-padding{
   padding: 8px 9px;
 }
-.btn-chat{
-  padding: 16px 16px !important;
-}
+
 .live-icon{
  color: #E10909;
  font-size: 13px;
@@ -1308,4 +1306,22 @@ height: 60vh;
 .live-text{
   font-size: 18px;
   color:  #E10909;
+}
+.member_box_scroll{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  height: 400px !important;
+  overflow-x: hidden;
+}
+.member_box_scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background: #196AAC!important
+}
+.btn-chat{
+  padding: 16px 16px !important;
+  border-radius: 100%;
+  font-size: 19px;
+  color: #1968a9;
+  background: #f0f0f0;
 }
