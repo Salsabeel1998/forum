@@ -1325,3 +1325,14 @@ height: 60vh;
   color: #1968a9;
   background: #f0f0f0;
 }
+.nav-link-active {
+  color: #6f727d !important;
+  font-size: 18px;
+}
+.nav-tabs .nav-link.nav-link-active.active, .nav-tabs .nav-item.show .nav-link {
+  border-bottom: none;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  font-size: 18px;
+  color: #1a64a6 !important;
+}
